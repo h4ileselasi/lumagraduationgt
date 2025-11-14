@@ -126,7 +126,8 @@ function initPackageSelection() {
   });
 }
 
-// ========== HORIZONTAL SCROLL ==========
+// ========== HORIZONTAL SCROLL ==========+
+
 function initHorizontalScroll() {
   const scrollContainers = [
     ".portfolio-scroll",
@@ -654,7 +655,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     message += `Amount: GH₵ ${totalAmount}%0A%0A`;
-    message += `I've sent the payment to 360468 (The Blessed Care Montessori).`;
+    message += `I've sent the payment to 360468 (Akosua Sekyi-Cann).`;
 
     whatsappBtn.href = `https://wa.me/233505775705?text=${message}`;
   }
