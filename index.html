@@ -397,7 +397,7 @@
                 <li><i class="fas fa-check"></i> 5 Edited Digital Photos</li>
                 <li><i class="fas fa-check"></i> 2 Premium Editing</li>
               </ul>
-              <a href="#contact" class="btn btn-outline" data-package="Basic"
+              <a href="#payment" class="btn btn-outline" data-package="Basic"
                 >Book Now</a
               >
             </div>
@@ -414,7 +414,7 @@
                 <li><i class="fas fa-check"></i> 7 Premium Editing</li>
                 <li><i class="fas fa-check"></i>Congratulations flyer</li>
               </ul>
-              <a href="#contact" class="btn btn-outline" data-package="Premium"
+              <a href="#payment" class="btn btn-outline" data-package="Premium"
                 >Book Now</a
               >
             </div>
@@ -432,7 +432,7 @@
                 <li><i class="fas fa-check"></i> 12 Premium Editing</li>
                 <li><i class="fas fa-check"></i>4 Congratulations flyerS</li>
               </ul>
-              <a href="#contact" class="btn btn-primary" data-package="SUAD"
+              <a href="#payment" class="btn btn-primary" data-package="SUAD"
                 >Book Now</a
               >
             </div>
@@ -449,7 +449,7 @@
                 <li><i class="fas fa-check"></i> 8 Premium Editing</li>
                 <li><i class="fas fa-check"></i>Congratulations flyer</li>
               </ul>
-              <a href="#contact" class="btn btn-outline" data-package="Family"
+              <a href="#payment" class="btn btn-outline" data-package="Family"
                 >Book Now</a
               >
             </div>
@@ -534,7 +534,7 @@
               <div
                 class="package-option-simple"
                 data-package="Family"
-                data-price="650"
+                data-price="700"
               >
                 <div class="package-info-simple">
                   <h4>Family Package</h4>
@@ -600,14 +600,12 @@
 
               <!-- Momo Payment Box -->
               <div class="momo-payment-box">
-                <h4>📱 Pay via Mobile Money</h4>
+                <h4>📱 Pay via MoMo Pay</h4>
                 <div class="momo-info">
                   <div class="momo-number-section">
                     <p class="momo-label">Momo Number to Pay:</p>
                     <div class="momo-number-copy">
-                      <span class="momo-number" id="momoNumber"
-                        >0595048812</span
-                      >
+                      <span class="momo-number" id="momoNumber">360468</span>
                       <button class="copy-btn" onclick="copyMomoNumber()">
                         <i class="fas fa-copy"></i> Copy
                       </button>
@@ -741,50 +739,6 @@
               </a>
             </div>
           </div>
-
-          <form class="contact-form" id="contactForm">
-            <div class="form-group">
-              <input type="text" id="name" name="name" required />
-              <label for="name">Your Name *</label>
-            </div>
-            <div class="form-group">
-              <input type="email" id="email" name="email" required />
-              <label for="email">Your Email *</label>
-            </div>
-            <div class="form-group">
-              <input type="tel" id="whatsapp" name="whatsapp" required />
-              <label for="whatsapp">WhatsApp Number *</label>
-            </div>
-            <div class="form-group">
-              <input type="text" id="package" name="package" readonly />
-              <label for="package">Selected Package</label>
-            </div>
-            <div class="form-group">
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                required
-                placeholder="Tell us about your graduation details, preferred dates, and any special requests..."
-              ></textarea>
-              <label for="message">Your Message *</label>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-large">
-              <span class="btn-text">
-                <i class="fab fa-whatsapp"></i>
-                Send via WhatsApp
-              </span>
-              <div class="btn-loading" style="display: none">
-                <i class="fas fa-spinner fa-spin"></i> Preparing...
-              </div>
-            </button>
-
-            <p class="form-notice">
-              <i class="fas fa-info-circle"></i>
-              You'll be redirected to WhatsApp to send your booking details
-            </p>
-          </form>
         </div>
       </div>
     </section>
