@@ -126,90 +126,6 @@ function initPackageSelection() {
   });
 }
 
-// ========== CONTACT FORM ==========
-function initContactForm() {
-  const contactForm = document.getElementById("contactForm");
-
-  if (!contactForm) {
-    console.log("Contact form not found");
-    return;
-  }
-
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    // Get form data
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const whatsappNumber = document.getElementById("whatsapp").value;
-    const package = document.getElementById("package").value || "Not Selected";
-    const message = document.getElementById("message").value;
-
-    // Package prices mapping
-    const packagePrices = {
-      "Bronze Package": 250,
-      "Silver Package": 350,
-      "Gold Package": 450,
-      "Platinum Package": 550,
-      "Family Package": 700,
-    };
-
-    // Calculate 50% deposit
-    const packagePrice = packagePrices[package] || 0;
-    const depositAmount = packagePrice * 0.5;
-
-    // Create the WhatsApp message with payment instructions
-    const whatsappMessage = `
-📸 *LUMA STUDIO PHOTOGRAPHY BOOKING*
-
-*Client Details:*
-👤 Name: ${name}
-📧 Email: ${email}
-📱 WhatsApp: ${whatsappNumber}
-📦 Selected Package: ${package}
-💰 Package Price: GH₵ ${packagePrice}
-💳 50% Deposit Required: GH₵ ${depositAmount}
-
-*Client's Message:*
-${message}
-
----
-
-💳 *PAYMENT INSTRUCTIONS:*
-Please make 50% installment payment of the selected package.
-
-📱 *Mobile Money Details:*
-Number: 0595048812
-Name: Kelvin Darko
-
-📸 *Please send payment screenshot for confirmation*
-
----
-
-_Received from Luma Studios Website_
-        `.trim();
-
-    // Encode the message for URL
-    const encodedMessage = encodeURIComponent(whatsappMessage);
-
-    // Create WhatsApp URL
-    const whatsappUrl = `https://wa.me/233595048812?text=${encodedMessage}`;
-
-    // Open WhatsApp in a new tab
-    window.open(whatsappUrl, "_blank");
-
-    // Show success message
-    alert(
-      "Thank you! Opening WhatsApp to send your booking details and payment instructions..."
-    );
-
-    // Reset form after a delay
-    setTimeout(() => {
-      contactForm.reset();
-    }, 1000);
-  });
-}
-
 // ========== HORIZONTAL SCROLL ==========
 function initHorizontalScroll() {
   const scrollContainers = [
@@ -738,7 +654,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     message += `Amount: GH₵ ${totalAmount}%0A%0A`;
-    message += `I've sent the payment to 0595048812 (The Blessed Care Montessori).`;
+    message += `I've sent the payment to 360468 (The Blessed Care Montessori).`;
 
     whatsappBtn.href = `https://wa.me/233505775705?text=${message}`;
   }
